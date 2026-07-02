@@ -30,8 +30,8 @@
 		</header>
 
 		<main class="page-shell main-content">
-			<section class="intro">
-				<h2 class="section-heading">Welcome</h2>
+			<section class="intro" aria-labelledby="intro-title">
+				<h2 id="intro-title" class="section-heading">Welcome</h2>
 				<p>
 					Since 1952, The Yellow Bird has helped thousands of St. Louis area
 					yarncrafters bring their unique creations to life with our extensive
@@ -40,11 +40,11 @@
 				</p>
 			</section>
 
-			<section class="catalog">
+			<section class="catalog" aria-labelledby="catalog-title">
 				<div class="catalog__details">
-					<h2 class="section-heading">Yarn & Supplies</h2>
+					<h2 id="catalog-title" class="section-heading">Yarn & Supplies</h2>
 					<div class="catalog__columns">
-						<div class="category-card">
+						<article class="category-card">
 							<h3 class="category-card__title">Yarn</h3>
 							<p class="category-card__label">Crafting</p>
 							<ul>
@@ -61,8 +61,8 @@
 								<li>Wool</li>
 								<li>Blends</li>
 							</ul>
-						</div>
-						<div class="category-card">
+						</article>
+						<article class="category-card">
 							<h3 class="category-card__title">Supplies</h3>
 							<ul class="category-card__list">
 								<li>Needles & Hooks</li>
@@ -74,7 +74,7 @@
 								class="category-card__logo"
 								src="https://drive.google.com/thumbnail?id=1ZeIDyK7IjvrmitsZTdvdAPNNR6nYHBbk&w=500"
 								alt="Yellow bird yarn logo" />
-						</div>
+						</article>
 					</div>
 				</div>
 				<figure class="catalog__feature">
@@ -85,7 +85,7 @@
 				</figure>
 			</section>
 
-			<section class="history">
+			<section class="history" aria-labelledby="history-title">
 				<div class="history__images">
 					<img
 						class="photo-frame history__portrait"
@@ -97,7 +97,7 @@
 						alt="Four generations of The Yellow Bird family" />
 				</div>
 				<div class="history__content">
-					<h2 class="section-heading">Our History</h2>
+					<h2 id="history-title" class="section-heading">Our History</h2>
 					<p>
 						An avid knitter since she was a young girl, Martha Cooke turned a
 						hobby and passion into a business when she opened The Yellow Bird
@@ -142,8 +142,8 @@
 				</div>
 			</section>
 
-			<section class="gallery">
-				<h2 class="section-heading">Project Highlights</h2>
+			<section class="gallery" aria-labelledby="gallery-title">
+				<h2 id="gallery-title" class="section-heading">Project Highlights</h2>
 				<div class="gallery__grid">
 					<img
 						class="photo-frame"
@@ -165,11 +165,11 @@
 			<div class="page-shell">
 				<address class="site-footer__contact">
 					<a href="tel:3145559276">314-555-YARN (9276)</a>
-					<span>&bull;</span>
+					<span aria-hidden="true">&bull;</span>
 					<a href="mailto:customerservice@yellowbirdyarn.com"
 						>customerservice@yellowbirdyarn.com</a
 					>
-					<span>&bull;</span>
+					<span aria-hidden="true">&bull;</span>
 					<span>1428 Cardigan Lane, St. Louis, MO, 63184</span>
 				</address>
 			</div>
