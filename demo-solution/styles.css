@@ -1,0 +1,252 @@
+/**** CASCADING STYLE SHEET ****/
+
+* {
+    box-sizing: border-box;  /*  traditional box model instead of W3C default for browsers - important for enforcing padding to constrain width of child elements on both left and right */
+}
+
+body {
+	background-color: white;
+	font-family: 'Bitter', serif;
+	font-size: 12pt;
+	font-weight: 400;
+	color: #222;  /* text color - shorthand for #222222 */
+	width: 100vw;
+	height: 100vh;
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;  /* prevents unnecessary scrollbar */
+}
+
+header {
+	background-color: #F1C40F;
+	position: relative;
+	height: 220px;
+	width: 100vw; 
+	margin: 0px;
+	padding: 0px;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	background-color: white;
+	width: 100vw;
+	margin: 0px 0px;
+	padding: 10px 160px 20px;
+	
+}
+
+footer {
+	background-color: #222;
+	position: relative;
+	height: 2.9rem;
+	width: 100vw;
+	margin: 0px;
+	padding: 1rem 160px 0px;
+	box-sizing: border-box; 
+}
+
+div {
+	position: relative;
+	margin: 0px;
+	padding: 10px 0px;  
+	box-sizing: border-box; 
+}
+
+h1 { 
+	font-family: 'Satisfy', cursive;
+	font-size: 3.5rem;
+}
+
+h2 { 
+	font-size: 2rem;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+h3 { 
+	font-size: 1.5rem;
+	font-family: 'Satisfy', cursive;
+}
+
+h4 {
+	font-family: 'Satisfy', cursive;
+	font-size: 2rem;
+	font-weight: 600;
+	color: #F1C40F;
+	margin: 5px;
+}
+
+p {
+	text-align: justify;
+	margin: 15px 0px;
+}
+
+img {
+	margin: 10px 0px;
+}
+
+hr { 
+	height: .7rem;
+	background-color: #F1C40F;
+	border: none;
+	margin: 0px; 
+}
+
+a {
+	color: #d8ad00; 
+	font-weight: 600;
+	text-decoration: none;  
+}
+
+a:hover {
+	color: #F1C40F; 
+}
+
+a:visited {
+	color: #d8a600; 
+}
+
+
+/** Set IDs for specific elements **/
+
+#header-group {  
+	padding: 0px;  
+}
+
+#header1 {
+	width: 100vw;
+	height: 160px;
+	margin: 0px;
+	padding: 10px 160px; 
+}
+
+#logo {
+	height: 120px;
+	width: 120px;
+}
+
+#page-title {
+	color: white;
+	text-align: center;
+	margin: 0px;  
+}
+
+#page-subtitle {
+	text-align: center;
+	margin: 0px; 
+}
+
+#header2 {
+	background-color: #222;
+	color: white;
+	width: 100vw;
+	height: 60px;
+	margin: 0px;
+	padding: 5px 160px; 
+}
+
+#tagline {
+	text-align: center;
+	margin: 10px;  /* override default */
+}
+
+#contact {
+	font-size: .9rem;
+	font-weight: 200;
+	color: white;
+	text-align: center;
+	margin: 0px;
+}
+
+
+/** Set classes for general usage **/
+
+.container {
+	display: flex; /* flexbox is built on the concept of nested containers */
+}
+
+.flex-row {
+	flex-direction: row; /* flexbox property */
+}
+
+.flex-col {
+	flex-direction: column; /* flexbox property */
+}
+
+.width60 {
+	width: 60%
+}
+
+.width50 {
+	width: 50%;
+}
+
+.width40 {
+	width: 40%
+}
+
+.width30 {
+	width: 30%;
+}
+
+.spaced-evenly {
+	justify-content: space-between; /* flexbox property */
+}
+
+div.centered {
+	justify-content: center;
+}
+
+div.end {
+	justify-content: flex-end;
+}
+
+.bold {
+	font-weight: 600;
+}
+
+img.right {
+	display: table;  
+	float: right;
+	margin-left: 20px;
+}
+
+img.left {
+	display: table;
+	float: left;
+	margin-right: 20px;
+}
+
+img.small {
+	height: auto;
+	width: 150px;
+}
+
+img.medium {
+	height: auto;
+	width: 250px;
+}
+
+img.large {
+	height: 318px;
+	width: 436px;
+}
+
+.bordered {
+	border: 4px solid #F1C40F;
+	border-radius: 5%;
+	padding: 0px;
+}
+
+.double-spaced {
+	margin-bottom: 1rem;
+}
+
+.logo-small {
+	position: relative;
+	height: 60px;
+	width: 60px;
+	margin: 60px 10px 0px 100px;  /* FIXME: being fussy about the positioning */
+}

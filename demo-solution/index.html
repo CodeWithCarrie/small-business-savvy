@@ -1,0 +1,118 @@
+
+
+<!-- 
+	FOR INSTRUCTIONS: Read instructions.txt
+	FOR TIPS & TRICKS: Check the README file
+
+	Use my solution for reference, but don't copy and paste from my code. Once you've written your content, before you write a single line of code, be thoughtful about how you want to present it and make it look unique. Put your sections in a different order, use different colors, format and align things differently - whatever you want. The purpose of this is for you to PRACTICE, and the final result should come out of your own personality and process!
+-->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>The Yellow Bird Yarn Shop</title>
+	<!-- Link CSS file here -->
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<!-- BONUS! Link Google fonts here -->
+	<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@200;400;600;800&family=Satisfy&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	
+	<!-- Header -->
+	<header>
+		<div id="header1">
+			<div id="header-group" class="container flex-row centered">
+				<img id="logo" class="left" src="https://drive.google.com/thumbnail?id=19EcIWW7IuGO94EaLQjN3A6OlEtIhy1tz&w=500" />
+				<div class="container flex-col">
+					<h1 id="page-title">The Yellow Bird</h1>
+					<h2 id="page-subtitle">Yarn Shop</h2>
+				</div>
+			</div>
+		</div>
+		<div id="header2">
+			<h3 id="tagline">quality goods for creative crafting</h3>
+		</div>
+	</header>
+
+	<main>		
+
+		<!-- Blurb -->
+		<div id="blurb">
+			<p>Since 1952, The Yellow Bird has helped thousands of St. Louis area yarncrafters bring their unique creations to life with our extensive selection of high-quality yarns and supplies. Whatever project you have in mind, we have <i>everything</i> you need!</p>
+		</div>
+
+		<hr> <!-- this <hr> has been customized with CSS -->
+
+		<!-- Div #3 - Products -->
+		<div class="container flex-row"> <!-- flexbox will put divs inside in a row --->
+			<div class="container flex-row width40"> 
+				<div class="width50">
+					<h4>Yarn</h4>
+					<p class="bold double-spaced">Crafting</p>  <!-- span has no properties of its own, just whatever you give it -->
+					<ul>  <!-- unordered list -->
+						<li>Acrylic</li>  <!-- list item -->
+						<li>Novelty</li>
+					</ul>
+					<p class="bold double-spaced">Apparel</p>
+					<ul>
+						<li>Alpaca</li>
+						<li>Bamboo</li>
+						<li>Cashmere</li>
+						<li>Cotton</li>
+						<li>Merino</li>
+						<li>Wool</li>
+						<li>Blends</li>
+					</ul>
+				</div>
+				<div class="width50">
+					<h4>Supplies</h4>
+					<p class="bold double-spaced">Needles & Hooks</p>
+					<p class="bold double-spaced">Notions & Accessories</p>
+					<p class="bold double-spaced">Patterns & Books</p>
+					<p class="bold double-spaced">Project Kits</p>
+					<img class="logo-small" src="https://drive.google.com/thumbnail?id=1ZeIDyK7IjvrmitsZTdvdAPNNR6nYHBbk&w=500" />
+				</div>
+			</div>
+
+			<div class="container end width60">
+				<img class="large bordered" src="https://drive.google.com/thumbnail?id=1uiWzLX0t46XlY-NgKO74arSCDa2CoTq8&w=500" />
+			</div>
+			
+		</div>
+
+		<hr>
+
+		<!-- Div #4 - History -->
+		<div>
+			<img class="left bordered small" src="https://drive.google.com/thumbnail?id=1fU2DPSnXM59jbt08-gSZS_8KI92EBELB&w=500" />
+			<h4>Our History</h4>
+			<img class="right bordered medium" src="https://drive.google.com/thumbnail?id=1BSr5aibx5V-iBHXQgmmNLrP8IWffmDE-&w=500" />
+			<p>An avid knitter since she was a young girl, Martha Cooke turned a hobby and passion into a business when she opened The Yellow Bird Yarn Shop in 1952 in a quaint old neighborhood of <a href="https://en.wikipedia.org/wiki/St._Louis" target="_blank">St. Louis, MO</a>. Though the floor space was limited, Martha turned it into the coziest corner around with her colorful displays of yarn from floor to ceiling. Customers from those first few decades remember her fondly, always buzzing around, happily humming as she stocked shelves on a little wooden step-stool.</p>
+			<p>Today, the family-owned business is run by Martha's two granddaughters, Carrie & Sarah. The shop is six times as big (but just as cozy!) and has customers not only from St. Louis and its surrounding counties, but all over the country through the company's online store.</p>
+			<p>The Yellow Bird acquires the finest yarns from all over the world, such as colorful silk blends from <a href="https://www.eisakunoro.com/" target="_blank">Noro</a> in Japan and classic English wool from <a href="https://knitrowan.com/en" target="_blank">Rowan</a> in Yorkshire. Bring your creative spirit and peruse all we have to offer - your next project is sure to be amazing!</p>
+			
+		</div>
+
+		<hr>
+
+		<!-- Div #5 - More Photos, Because Why Not -->
+		<div class="container flex-row spaced-evenly"> <!-- use flexbox for simple layout -->
+			<img class="bordered width30" src="https://drive.google.com/thumbnail?id=12G7D_Tr4qVdwQsMKeijxsT2cjlKYLhE5&w=500" />
+			<img class="bordered width30" src="https://drive.google.com/thumbnail?id=1OjGS7KXY5Mg1UlU5tr6Q10YCL8M2U-NW&w=500" />
+			<img class="bordered width30" src="https://drive.google.com/thumbnail?id=1n_aTl8Is6wyRWnRRDcXp_vb4yqf4SzMj&w=500" />
+		</div>			
+
+	</main>
+
+	<footer>
+		<p id="contact">314-555-YARN (9276) &bull; customerservice@yellowbirdyarn.com &bull; 1428 Cardigan Lane, St. Louis, MO, 63184</p>
+	</footer>
+
+</body>
+
+</html>
