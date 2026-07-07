@@ -4,8 +4,7 @@ A code demo & practice exercise for learners who are new to HTML and CSS
 
 ## THE DEMO
 
-<!-- TODO: Publish on GitHub Pages and switch out link -->
-After you've forked and cloned this repository, you can open the [demo page](./demo-solution/index.html) on your local machine at any time for reference. Use your browser's Developer Tools to explore the elements and styling.
+After you've forked and cloned this repository, you can open any of the solution pages in the browser on your local machine for reference. Use your browser's Developer Tools to explore the elements and styling.
 
 ## THE PRACTICE EXERCISE
 
