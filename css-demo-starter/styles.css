@@ -1,246 +1,38 @@
 /**** CASCADING STYLE SHEET ****/
 
-* {
-	box-sizing: border-box;
-}
+/** PAGE DEFAULTS **/
 
-body {
-	margin: 0;
-	background-color: #ffffff;
-	color: #222222;
-	font-family: 'Bitter', serif;
-	font-size: 1rem;
-	line-height: 1.55;
-}
+/* TODO #1B: Add default styles for the body, including margin, background color, text color, font family, font size, and line height. */
+/* TODO #1C: Add default styles for images so they scale down neatly, and for links so they match the page color palette. */
 
-img {
-	display: block;
-	max-width: 100%;
-	height: auto;
-}
+/** HEADER **/
 
-a {
-	color: #d8a600;
-	font-weight: 600;
-	text-decoration: none;
-}
+/* TODO #2B: Style the header so the top area stands out and the page title feels like a business banner. */
+/* TODO #2C: Style the main title, subtitle, and tagline so they have different sizes and visual roles. */
+/* TODO #2D: Add spacing around the logo and header text so the top of the page does not feel cramped. */
 
-a:hover {
-	color: #f1c40f;
-}
+/** MAIN **/
 
-a:visited {
-	color: #d8a600;
-}
+/* TODO #3B: Style the main element and each section so the content has breathing room. */
+/* TODO #3C: Style second-level headings and paragraph text so section titles stand out from the body copy. */
 
-.page-shell {
-	max-width: 1120px;
-	margin: 0 auto;
-	padding: 0 1.5rem;
-}
+/** YARN & SUPPLIES SECTION **/
 
-.site-header__top {
-	background-color: #f1c40f;
-	padding: 1rem 0;
-}
+/* TODO #4B: Style the lists and images in this section so the content feels grouped instead of running together. */
+/* TODO #4C: Create a side-by-side layout for the two item groups and the large feature image. */
+/* TODO #4D: Give the smaller logo and the larger project image sizes that fit the section well. */
 
-.brand {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 1.5rem;
-}
+/** HISTORY SECTION **/
 
-.brand__logo {
-	width: 120px;
-	height: 120px;
-}
+/* TODO #5B: Arrange the history images and text so they sit side-by-side instead of stacking in one long column. */
+/* TODO #5C: Give the history images sizes and spacing that keep them balanced next to the text. */
 
-.brand__title {
-	margin: 0;
-	font-family: 'Satisfy', cursive;
-	font-size: 3.25rem;
-	line-height: 1;
-	color: #ffffff;
-	text-align: center;
-}
+/** PROJECT HIGHLIGHTS SECTION **/
 
-.brand__subtitle {
-	margin: 0;
-	font-size: 1.8rem;
-	font-weight: 600;
-	text-transform: uppercase;
-	text-align: center;
-}
+/* TODO #6B: Arrange the three project images in even thirds across the page. */
+/* TODO #6C: Add shared border styling to the main content images so the page looks cohesive. */
 
-.site-header__bottom {
-	background-color: #222222;
-	color: #ffffff;
-	padding: 0.8rem 1.5rem;
-}
+/** FOOTER **/
 
-.site-header__tagline {
-	margin: 0;
-	text-align: center;
-	font-family: 'Satisfy', cursive;
-	font-size: 1.45rem;
-	line-height: 1.35;
-}
-
-.main-content {
-	padding-top: 1rem;
-	padding-bottom: 2.5rem;
-}
-
-.main-content section {
-	padding: 1.5rem 0;
-	border-bottom: 0.7rem solid #f1c40f;
-}
-
-.section-heading {
-	margin: 0 0 0.8rem;
-	font-family: 'Satisfy', cursive;
-	font-size: 2.1rem;
-	font-weight: 600;
-	color: #d8a600;
-}
-
-.intro p,
-.history p {
-	margin: 0.8rem 0;
-	text-align: justify;
-}
-
-.catalog {
-	display: flex;
-	flex-direction: column;
-}
-
-.category-card {
-	background-color: #fff7d4;
-	border-radius: 12px;
-	padding: 1rem;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-}
-
-.catalog__content {
-	display: grid;
-	grid-template-columns: 1fr 1fr 2fr;
-	gap: 1.5rem;
-	align-items: stretch;
-}
-
-.category-card__title {
-	margin: 0;
-	font-family: 'Satisfy', cursive;
-	font-size: 1.8rem;
-	font-weight: 600;
-	color: #d8a600;
-}
-
-.category-card__label {
-	margin: 1rem 0 0.5rem;
-	font-weight: 600;
-}
-
-.category-card ul {
-	margin: 0 0 1rem;
-	padding-left: 1.1rem;
-}
-
-.category-card__list {
-	margin-top: 1rem;
-}
-
-.category-card__logo {
-	width: 64px;
-	margin-top: 1rem;
-}
-
-.category-card.supplies {
-    justify-content: space-between;
-}
-
-.supplies img {
-    align-self: flex-end;
-}
-
-.catalog__feature {
-	margin: 0;
-	height: 100%;
-}
-
-.catalog__feature .photo-frame {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-
-.history {
-	display: flex;
-	gap: 2.5rem;
-}
-
-.history__images {
-	display: flex;
-	flex-direction: column;
-	width: 200px;
-	gap: 1rem;
-	align-items: center;
-}
-
-.history__content {
-	flex: 1;
-}
-
-.history__portrait {
-	width: 200px;
-}
-
-.history__family {
-	width: 200px;
-}
-
-.gallery__grid {
-	display: flex;
-	justify-content: space-between;
-	gap: 1rem;
-}
-
-.gallery__grid img {
-	width: 32%;
-}
-
-.photo-frame {
-	border: 4px solid #f1c40f;
-	border-radius: 12px;
-}
-
-.site-footer {
-	background-color: #222222;
-	padding: 1rem 0;
-}
-
-.site-footer__contact {
-	margin: 0;
-	color: #ffffff;
-	font-style: normal;
-	font-size: 0.95rem;
-	font-weight: 300;
-	text-align: center;
-	line-height: 1.45;
-	display: flex;
-	justify-content: center;
-	gap: 0.8rem;
-	flex-wrap: wrap;
-}
-
-.site-footer__contact a {
-	color: #ffffff;
-}
-
-.site-footer__contact a:hover {
-	color: #f1c40f;
-}
+/* TODO #7B: Style the footer with its own background, spacing, and text color so it reads as a separate page section. */
+/* TODO #7C: Style the contact information so it is centered and easy to read. */
