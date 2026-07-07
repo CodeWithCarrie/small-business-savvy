@@ -55,6 +55,8 @@ a:visited {
 	padding: 0 var(--space-lg);
 }
 
+/** HEADER **/
+
 .site-header__top {
 	background-color: var(--color-accent);
 	padding: var(--space-md) 0;
@@ -103,6 +105,8 @@ a:visited {
 	line-height: 1.35;
 }
 
+/** MAIN **/
+
 .main-content {
 	padding-top: var(--space-md);
 	padding-bottom: var(--space-xl);
@@ -127,6 +131,17 @@ a:visited {
 	text-align: justify;
 }
 
+/** YARN & SUPPLIES SECTION **/
+
+.category-card {
+    background-color: var(--color-surface);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 .catalog {
 	display: grid;
 	gap: var(--space-sm);
@@ -137,15 +152,6 @@ a:visited {
 	grid-template-columns: 1fr 1fr 2fr;
 	gap: var(--space-lg);
 	align-items: stretch;
-}
-
-.category-card {
-	background-color: var(--color-surface);
-	border-radius: var(--radius-md);
-	padding: var(--space-md);
-	height: 100%;
-	display: flex;
-	flex-direction: column;
 }
 
 .category-card__title {
@@ -194,6 +200,8 @@ a:visited {
 	object-fit: cover;
 }
 
+/** HISTORY SECTION **/
+
 .history {
 	display: grid;
 	grid-template-columns: 200px 1fr;
@@ -216,6 +224,8 @@ a:visited {
 	width: 200px;
 }
 
+/** PROJECT HIGHLIGHTS SECTION **/
+
 .gallery__grid {
 	display: grid;
 	grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -230,6 +240,8 @@ a:visited {
 	border: var(--border-accent);
 	border-radius: var(--radius-md);
 }
+
+/** FOOTER **/
 
 .site-footer {
 	background-color: var(--color-ink);
@@ -257,6 +269,8 @@ a:visited {
 .site-footer__contact a:hover {
 	color: var(--color-accent);
 }
+
+/** MEDIA QUERIES FOR RESPONSIVE LAYOUT **/
 
 @media (max-width: 980px) {
 	.catalog__content {
