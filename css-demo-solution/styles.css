@@ -3,7 +3,7 @@
 /** PAGE DEFAULTS **/
 
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
@@ -16,11 +16,11 @@ body {
 }
 
 h2 {
-	margin: 0 0 0.8rem;
-	font-family: 'Satisfy', cursive;
+	color: #d8a600;
+    font-family: 'Satisfy', cursive;
 	font-size: 2.1rem;
 	font-weight: 600;
-	color: #d8a600;
+	margin: 0 0 0.8rem;
 }
 
 img {
@@ -31,6 +31,8 @@ img {
 
 a {
 	color: #d8a600;
+    font-weight: 600;
+	text-decoration: none;
 }
 
 a:hover {
@@ -95,11 +97,11 @@ a:visited {
 }
 
 .site-header__tagline {
-	margin: 0;
-	text-align: center;
+    text-align: center;
 	font-family: 'Satisfy', cursive;
 	font-size: 1.45rem;
 	line-height: 1.35;
+	margin: 0;
 }
 
 /** MAIN **/
@@ -116,8 +118,8 @@ a:visited {
 
 .intro p,
 .history p {
-	margin: 0.8rem 0;
 	text-align: justify;
+	margin: 0.8rem 0;
 }
 
 /** YARN & SUPPLIES SECTION **/
@@ -127,28 +129,28 @@ a:visited {
 	flex-direction: column;
 }
 
-.category-card {
-    display: flex;
-    flex-direction: column;
-    background-color: #fff7d4;
-    height: 100%;
-    padding: 1rem;
-    border-radius: 12px;
+.catalog__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    gap: 1.5rem;
+    align-items: stretch;
 }
 
-.catalog__content {
-	display: grid;
-	grid-template-columns: 1fr 1fr 2fr;
-	gap: 1.5rem;
-	align-items: stretch;
+.category-card {
+	display: flex;
+	flex-direction: column;
+	background-color: #fff7d4;
+	height: 100%;
+	padding: 1rem;
+	border-radius: 12px;
 }
 
 .category-card__title {
-	margin: 0;
+	color: #d8a600;
 	font-family: 'Satisfy', cursive;
 	font-size: 1.8rem;
 	font-weight: 600;
-	color: #d8a600;
+	margin: 0;
 }
 
 .category-card__label {
@@ -161,8 +163,8 @@ a:visited {
 	padding-left: 1.1rem;
 }
 
-.category-card__list {
-	margin-top: 1rem;
+.category-card__text ul {
+    margin-top: var(--space-md);
 }
 
 .category-card__logo {
@@ -199,9 +201,9 @@ a:visited {
 .history__images {
 	display: flex;
 	flex-direction: column;
-	width: 200px;
-	gap: 1rem;
 	align-items: center;
+	gap: 1rem;
+	width: 200px;
 }
 
 .history__content {
@@ -236,17 +238,17 @@ a:visited {
 }
 
 .site-footer__contact {
-	margin: 0;
-	color: #ffffff;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 0.8rem;
+    color: #ffffff;
 	font-style: normal;
 	font-size: 0.95rem;
 	font-weight: 300;
 	text-align: center;
 	line-height: 1.45;
-	display: flex;
-	justify-content: center;
-	gap: 0.8rem;
-	flex-wrap: wrap;
+	margin: 0;
 }
 
 .site-footer__contact a {
