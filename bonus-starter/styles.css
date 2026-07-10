@@ -1,9 +1,11 @@
 /**** CASCADING STYLE SHEET ****/
 
-/* TODO #1A: Create a :root block near the top of this file and define reusable variables for colors, spacing, radius, and border styles. */
-/* TODO #1B: Replace hard-coded color values in existing rules with var(...) so the palette is controlled from :root. */
-/* TODO #1C: Replace repeated spacing values (for example 1rem, 1.5rem, 2.5rem) with spacing variables from :root. */
-/* TODO #1D: Replace repeated border and radius values with variables so image frames and cards stay consistent. */
+/* TODO #1A: Create a :root block near the top of this file and define reusable variables for colors, spacing, radius, border styles, and font families. */
+/* TODO #1B: In :root, add font-size variables using clamp() for key text sizes (body, section headings, subtitle/tagline, and footer text). */
+/* TODO #1C: Replace hard-coded color values in existing rules with var(...) so the palette is controlled from :root. */
+/* TODO #1D: Replace repeated spacing, border, and radius values with variables so cards, frames, and section rhythm stay consistent. */
+/* TODO #1E: Apply the clamp()-based font-size variables throughout the file so typography scales fluidly before media queries are introduced. */
+/* TODO #1F: Add optional clamp()-based custom properties for shell padding and history image width, then apply them where fixed sizes currently appear. */
 
 * {
 	box-sizing: border-box;
@@ -20,7 +22,7 @@ body {
 
 h2 {
 	color: #d8a600;
-    font-family: 'Satisfy', cursive;
+	font-family: 'Satisfy', cursive;
 	font-size: 2.1rem;
 	font-weight: 600;
 	margin: 0 0 0.8rem;
@@ -34,7 +36,7 @@ img {
 
 a {
 	color: #d8a600;
-    font-weight: 600;
+	font-weight: 600;
 	text-decoration: none;
 }
 
@@ -100,7 +102,7 @@ a:visited {
 }
 
 .site-header__tagline {
-    text-align: center;
+	text-align: center;
 	font-family: 'Satisfy', cursive;
 	font-size: 1.45rem;
 	line-height: 1.35;
@@ -136,24 +138,27 @@ a:visited {
 }
 
 .catalog__content {
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
-    gap: 1.5rem;
-    align-items: stretch;
+	display: flex;
+	gap: 1.5rem;
+	align-items: stretch;
+}
+
+.catalog__content > * {
+	align-self: stretch;
 }
 
 .category-card {
 	display: flex;
 	flex-direction: column;
+	width: 25%;
 	background-color: #fff7d4;
-	height: 100%;
 	padding: 1rem;
 	border-radius: 12px;
 }
 
 .category-card__title {
 	color: #d8a600;
-    font-family: 'Satisfy', cursive;
+	font-family: 'Satisfy', cursive;
 	font-size: 1.8rem;
 	font-weight: 600;
 	margin: 0;
@@ -170,7 +175,7 @@ a:visited {
 }
 
 .category-card__text ul {
-    margin-top: var(--space-md);
+	margin-top: 1rem;
 }
 
 .category-card__logo {
@@ -187,11 +192,13 @@ a:visited {
 }
 
 .catalog__feature {
+	width: 50%;
+	display: flex;
 	margin: 0;
-	height: 100%;
 }
 
 .catalog__feature .photo-frame {
+	flex: 1;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -252,7 +259,7 @@ a:visited {
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 0.8rem;
-    color: #ffffff;
+	color: #ffffff;
 	font-style: normal;
 	font-size: 0.95rem;
 	font-weight: 300;
@@ -271,7 +278,13 @@ a:visited {
 
 /** MEDIA QUERIES FOR RESPONSIVE LAYOUT **/
 
-/* TODO #3A: Add a media query for max-width 980px that adjusts catalog, history, and gallery layouts to a tablet-friendly arrangement. */
-/* TODO #3B: In that 980px query, keep the two list cards side-by-side and move the catalog feature image to a full-width row below them. */
-/* TODO #3C: In that 980px query, switch history images to a 50/50 side-by-side layout and stack the gallery to one column. */
-/* TODO #3D: Add a second media query for max-width 700px that stacks the two list cards to 100% width and applies small-screen typography/padding tweaks. */
+/* TODO #3A: Add media query #1 at 1024px: create @media (max-width: 1024px) as the first layout breakpoint. */
+/* TODO #3B: Inside 1024px, stack the history section to one column. */
+/* TODO #3C: Inside 1024px, switch history images to a 2-column image row and set the gallery to one column. */
+
+/* TODO #4A: Add media query #2 at 768px: create @media (max-width: 768px) as the second layout breakpoint. */
+/* TODO #4B: Inside 768px, change the catalog layout to two columns. */
+/* TODO #4C: Inside 768px, place the catalog feature image below the two cards by spanning it across both columns. */
+
+/* TODO #5A: Add media query #3 at 480px: create @media (max-width: 480px) as the final layout breakpoint. */
+/* TODO #5B: Inside 480px, collapse the catalog to one column and reset any temporary feature-image spanning from the 768px query. */
