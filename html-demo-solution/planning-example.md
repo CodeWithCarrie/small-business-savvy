@@ -1,54 +1,60 @@
 # PLAN BEFORE YOU CODE
 
 > [!NOTE]
-> This is an example of how plan out the content before coding.	
+> This is an example of how plan out the content before coding.
 
-## TITLE 
+## TITLE
+
 _Logo optional_
 
 The Yellow Bird Yarn Shop
 
-
 ## TAGLINE
+
 quality goods for creative crafting
 
+## BLURB
 
-## BLURB 
 _A couple of sentences to tell visitors why your business is great_
 
 Since 1952, The Yellow Bird has helped thousands of St. Louis area yarncrafters bring their unique creations to life with our extensive selection of high-quality yarns and supplies. Whatever project you have in mind, we have everything you need!
 
+## SERVICES/ITEMS/CATEGORIES
 
-## SERVICES/ITEMS/CATEGORIES 
 _Make at least one ordered or unordered list_
 
 ### Yarn
+
 - Crafting (Acrylic, Novelty)
 - Wearables (Alpaca, Bamboo, Cashmere, Cotton, Merino, Wool, & Blends)
 
 ### Supplies
+
 - Needles & Hooks
 - Notions & Accessories
 - Patterns & Books
 - Project Kits
 
-## ABOUT/HISTORY 
+## ABOUT/HISTORY
+
 _At least two paragraphs - write some fiction_
 
 An avid knitter since she was a young girl, Martha Cooke turned a hobby and passion into a business when she opened The Yellow Bird Yarn Shop in 1952 in a quaint old neighborhood of St. Louis, MO. Though the floor space was limited, Martha turned it into the coziest corner around with her colorful displays of yarn from floor to ceiling. Customers from that era remember her fondly, always buzzing around, happily humming as she stocked shelves on a little wooden step-stool.
 
-Today, the family-owned business is run by Martha's two granddaughters, Carrie & Sarah. The shop is six times as big (but just as cozy!) and has customers not only from St. Louis and its surrounding counties, but all over the country through the company's online store. 
+Today, the family-owned business is run by Martha's two granddaughters, Carrie & Sarah. The shop is six times as big (but just as cozy!) and has customers not only from St. Louis and its surrounding counties, but all over the country through the company's online store.
 
 The Yellow Bird acquires the finest yarns from all over the world, such as colorful silk blends from Noro in Japan and classic English wool from Rowan in Yorkshire. Bring your creative spirit and peruse all we have to offer - your next project is sure to be amazing!
 
-## CONTACT INFO 
+## CONTACT INFO
+
 _Put this anywhere and format however you want_
 
 Phone: 314-555-YARN (9276)
 Email: customerservice@yellowbirdyarn.com
 Address: 1428 Cardigan Lane, St. Louis, MO, 63184
 
-## IMAGES 
+## IMAGES
+
 _At least 3_
 
 1. yarn in different colors, textures
@@ -94,8 +100,8 @@ https://drive.google.com/thumbnail?id=1ZGqW_4tyCmfJsZTvWPkWroDoNsjisbEO
 Martha
 https://drive.google.com/thumbnail?id=1fU2DPSnXM59jbt08-gSZS_8KI92EBELB
 
+## LINKS
 
-## LINKS 
 _At least 3_
 
 St. Louis, MO
